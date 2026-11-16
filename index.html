@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is science</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px 20px calc(88px + env(safe-area-inset-bottom));
+            background-color: #f9f9fb;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3.75rem;
+            font-weight: 700;
+            color: blueviolet;
+            margin-top: 20px;
+            font-family: "Agrave Pro", cursive;
+            font-optical-sizing: auto;
+            line-height: 1.1;
+        }
+
+        main {
+            max-width: 760px;
+            margin: 32px auto;
+            padding: 24px;
+            background: #ffffff;
+            border-radius: 8px;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        main h2 {
+            margin-bottom: 12px;
+            color: blueviolet;
+        }
+
+        main p + p {
+            margin-top: 12px;
+        }
+
+        main img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto 0;
+        }
+
+        nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            border-top: 1px solid #e0e0e0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.06);
+            padding: 8px 0 calc(8px + env(safe-area-inset-bottom));
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        nav ul li a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #555;
+            font-size: 12px;
+            font-weight: bold;
+            gap: 4px;
+            padding: 4px 12px;
+            transition: color 0.2s ease;
+        }
+
+        nav ul li a .icon {
+            font-size: 20px;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: blueviolet;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px 12px calc(80px + env(safe-area-inset-bottom));
+            }
+
+            h1 {
+                font-size: 2.25rem;
+            }
+
+            main {
+                margin: 24px auto;
+                padding: 18px;
+            }
+
+            nav ul li a {
+                padding: 4px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Welcome to Science Project
+    </h1>
+
+    <main>
+        <h2>What is evaporation?</h2>
+        <p>Evaporation is the process in which a liquid changes into a gas. For example, when the Sun warms water in a puddle, some of the water turns into invisible water vapour and rises into the air.</p>
+        <p>Evaporation also helps wet clothes dry. Heat makes evaporation happen faster. It is an important part of the water cycle: water evaporates, cools to form clouds, and can later fall back to Earth as rain.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBrdEZAt0oNFMzDBjpRx9AeFOkw5I79H_lFG8_tlVJ6w&amp;s=10.png" alt="Illustration related to evaporation">
+    </main>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#" class="active">
+                    <span class="icon">🏠</span>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <span class="icon">✉️</span>
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="setting.html">
+                    <span class="icon">⚙️</span>
+                    <span>Setting</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
